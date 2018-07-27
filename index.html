@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kennelApp" ng-controller="MainController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <base href="/kennel"> <!-- needed for Angular HTML 5 mode -->
+                 <!--FontScripts-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Titillium+Web:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+                <!--BowerScripts--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome-4.5.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome-4.5.0/css/font-awesome.min.css">
+                 <!--MyScripts-->
+    <link rel="stylesheet" type="text/css" href="./css/mainstyle.css">
+</head>
+<body>   
+    <nav class="navbar navbar-inverse">
+         <div id="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href=".">Kennedy <span id="logo"></span>Kennels</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> 
+                        <a class="nav-link" href="/home"> Home </a> 
+                    </li>
+                    <li> 
+                        <a class="nav-link" href="/services"> Available Services </a> 
+                    </li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"> About Us <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdownItem">
+                                <a class="nav-link"href="/story"> Our Story </a> 
+                            </li>
+                            <li class="dropdownItem">
+                                <a class="nav-link" href="/contact"> Contact Us </a>
+                            </li>
+                            <li class="dropdownItem">
+                                <a class="nav-link" href="/FAQ"> FAQ </a>
+                            </li>
+                        </ul>
+                    </li>
+             
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <div ng-view class="container"></div>
+    <br>
+    <div class="LandingSpace"></div>
+    <footer class="text-center">
+        <a id="scrollBtn" class="up-arrow" onclick="topFunction()">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+            <ul class="footlinks">
+                <li class="footlink">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <a class="footcontent" href="mailto:aisling1odonvan@gmail.com"><strong>info@.com</strong>
+                    </a>
+                </li>
+                <li class="footlink">
+                    <i class="fa fa-twitter" aria-hidden="true"></i> <a class="footcontent" href="https://twitter.com" target=_blank><strong>Find us on Twitter</strong>
+                    </a>
+                </li>
+                <li class="footlink">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> <a class="footcontent" href="https://www.facebook.com/" target=_blank><strong>Find us on Facebook</strong>
+                    </a>
+                </li>
+            </ul>
+        <br>
+    </footer>
+
+             <!--BowerScripts-->
+    <script src='bower_components/jquery/dist/jquery.min.js'></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+
+          <!--MyScripts-->
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/scroll.js"></script>
+    
+
+</body>
+</html>
