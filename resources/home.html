@@ -1,0 +1,24 @@
+<div class="resourceBox" ng-controller="HomeController">
+	<div></div>	
+	<br>
+	<div class="LandingP">
+		<br>
+		<h1>{{greeting}}</h1>
+		<p>{{heading}}</p>
+	</div>
+</div>
+		
+<div id="" ng-controller="CarouselCtrl">
+	<div>
+        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+           	<div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            	<img id="carouselImage" style="width: 100%" ng-src="{{slide.image}}">
+            	<h3>{{slide.text}}</h3>
+            	<br>
+            </div>
+    	</div>
+	</div>
+</div>
+
+
+</div>
