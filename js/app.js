@@ -9,7 +9,7 @@ angular.module('kennelApp')
     templateUrl: 'resources/home.html',
     controller: 'HomeController'
   })
-  .when('/kennel/home', {
+  .when('/KennelSite/home', {
     templateUrl: 'resources/home.html',
   })
   .when('/services', {
